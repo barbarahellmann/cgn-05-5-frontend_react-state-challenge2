@@ -12,10 +12,16 @@ function App() {
 
 
   return (
-    <>
-      {characterData.map((characterTemp) => (
-          <Character id={characterTemp.id} name={characterTemp.name} status={characterTemp.status} species={characterTemp.species}/>))}
-    </>
+      <>
+        <input
+                type="text"
+                placeholder="Comming soon"
+  //              value={}
+  //              onChange={}
+        />
+        {characterData.map((characterTemp) => (
+            <Character id={characterTemp.id} name={characterTemp.name} status={characterTemp.status} species={characterTemp.species}/>))}
+      </>
   )
 }
 
